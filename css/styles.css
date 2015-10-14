@@ -274,7 +274,7 @@ h5 {
 -----------------------------------------*/
 
 header {
-    background: url(../images/bg-1.jpg) no-repeat center top fixed;
+    background: url(../images/big/boxer.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
             background-size: cover;
 }
@@ -502,10 +502,13 @@ object {
    SECTION:  TESTIMONIALS                 
 -----------------------------------------*/
 .testimonials {
-    background: url(../images/bg-2.jpg) no-repeat center fixed;
+    background: url(../images/big/beach.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
             background-size: cover;
     color: #ffffff;
+}
+.testimonials.vision {
+    background: url(../images/big/run.jpg) no-repeat center fixed;
 }
 
 .testimonials .color-overlay {
@@ -679,7 +682,7 @@ object {
 -----------------------------------------*/
 
 .download {
-    background: url('../images/bg-3.jpg') no-repeat center fixed;
+    background: url('../images/big/lift.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
             background-size: cover;
     color: #ffffff;
