@@ -37,6 +37,14 @@ RESPONSIVE FIXES
         float: none;
         margin: auto;
     }
+
+    footer p{
+            height: auto;
+    }
+
+    .msf{
+        padding-top: 50px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
