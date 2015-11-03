@@ -112,7 +112,7 @@ li {
 
 
 /*---------------------------------------
-   Typography                
+   Typography
 -----------------------------------------*/
 
 /* FONT FACE LOADER */
@@ -125,7 +125,7 @@ li {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
- 
+
     @font-face {
         font-family: 'Lane';
         src: url('../fonts/lanenar_Lane.svg#Lane') format('svg');
@@ -168,7 +168,7 @@ h5 {
 }
 
 /*---------------------------------------
-   CUSTOM BUTTON              
+   CUSTOM BUTTON
 -----------------------------------------*/
 
 .standard-button,
@@ -200,7 +200,7 @@ h5 {
 
 
 /*---------------------------------------
-   TEXTS               
+   TEXTS
 -----------------------------------------*/
 
 .white-text {
@@ -217,7 +217,7 @@ h5 {
 
 
 /*---------------------------------------
-   SECTIONS          
+   SECTIONS
 -----------------------------------------*/
 
 .section-header {
@@ -237,7 +237,7 @@ h5 {
 }
 
 /*---------------------------------------
-   LINES          
+   LINES
 -----------------------------------------*/
 
 .colored-line {
@@ -265,12 +265,12 @@ h5 {
 
 /*---------------------------------------
 =========================================
- **   SECTION STYLES                
+ **   SECTION STYLES
 =========================================
 -----------------------------------------*/
 
 /*---------------------------------------
-   SECTION:  HOME                 
+   SECTION:  HOME
 -----------------------------------------*/
 
 header {
@@ -358,7 +358,7 @@ header .intro-section .buttons {
 }
 
 /*---------------------------------------
-   SECTION:  FEATURES                 
+   SECTION:  FEATURES
 -----------------------------------------*/
 
 .features {
@@ -428,7 +428,7 @@ header .intro-section .buttons {
 }
 
 /*---------------------------------------
-   SECTION:  BRIEF                 
+   SECTION:  BRIEF
 -----------------------------------------*/
 
 .app-brief {
@@ -493,7 +493,7 @@ object {
     background: transparent !important;
     margin: auto;
     margin-bottom: 50px;
-    margin-top: 40px; 
+    margin-top: 40px;
 }
 
 .video {
@@ -502,7 +502,7 @@ object {
 
 
 /*---------------------------------------
-   SECTION:  TESTIMONIALS                 
+   SECTION:  TESTIMONIALS
 -----------------------------------------*/
 .testimonials {
     background: url(../images/big/beach.jpg) no-repeat center fixed;
@@ -511,7 +511,8 @@ object {
     color: #ffffff;
 }
 .testimonials.vision {
-    background: url(../images/big/run.jpg) no-repeat center fixed;
+    /*background: url(../images/big/run.jpg) no-repeat center fixed;*/
+    background: url(../images/big/lift.jpg) no-repeat center fixed;
 }
 
 .testimonials .color-overlay {
@@ -574,7 +575,7 @@ object {
 
 
 /*---------------------------------------
-   SECTION:  SERVICES           
+   SECTION:  SERVICES
 -----------------------------------------*/
 
 .services {
@@ -598,7 +599,7 @@ object {
 
 
 /*---------------------------------------
-   SECTION:  SCREENSHOTS 
+   SECTION:  SCREENSHOTS
 -----------------------------------------*/
 
 .screenshots {
@@ -622,7 +623,7 @@ object {
 }
 
 /*---------------------------------------
-   SECTION:  PACKAGES | Added on version 1.7      
+   SECTION:  PACKAGES | Added on version 1.7
 -----------------------------------------*/
 
 .packages {
@@ -652,7 +653,7 @@ object {
 
 .single-package .price .color-bg h2 {
     color: #FFFFFF !important;
-} 
+}
 
 .single-package .price .sign {
     vertical-align: super;
@@ -681,7 +682,7 @@ object {
 
 
 /*---------------------------------------
-   SECTION:  DOWNLOAD                 
+   SECTION:  DOWNLOAD
 -----------------------------------------*/
 #download{
     display: none;
@@ -717,7 +718,7 @@ object {
     border: 2px solid #FFF;
 }
 
-.download .subscription-form .input-box:focus, 
+.download .subscription-form .input-box:focus,
 .download .subscription-form .input-box:active {
     color: #000;
     font-weight: 400;
@@ -734,7 +735,7 @@ object {
 
 
 /*---------------------------------------
-   SECTION:  FOOTER                
+   SECTION:  FOOTER
 -----------------------------------------*/
 
 footer{
@@ -815,7 +816,6 @@ footer .contact-box .expanded-contact-form .textarea-box:active {
 
 footer .social-icons {
     margin-top: 30px;
-    border-bottom: 1px solid #808080;
     padding-bottom: 50px;
 }
 
@@ -827,6 +827,11 @@ footer .social-icons li {
 footer .social-icons li a {
     font-size: 30px;
     color: white;
+}
+
+footer .address {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #808080;
 }
 
 footer .copyright {
