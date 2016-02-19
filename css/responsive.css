@@ -4,6 +4,12 @@ RESPONSIVE FIXES
 =========================================
 -----------------------------------------*/
  
+@media (max-width: 1199px) {
+    .features .feature {
+        height: 200px;
+    }
+}
+
 @media (max-width: 1024px) {
 
     .animated {
@@ -15,7 +21,6 @@ RESPONSIVE FIXES
         background-attachment: scroll;
     }
 }
-
 
  @media (max-width: 991px) {
  
@@ -44,6 +49,16 @@ RESPONSIVE FIXES
 
     .msf{
         padding-top: 50px;
+    }
+
+    .features .features-left .feature-details,
+    .features .features-right .feature-details {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .features .feature {
+        height: 180px;
     }
 }
 
@@ -91,6 +106,11 @@ RESPONSIVE FIXES
     .features .features-right .icon-container {
         display: none;
     }
+
+    .features .feature {
+        height: 160px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -135,6 +155,7 @@ RESPONSIVE FIXES
     }
 
     .features .feature {
+        height: 160px;
         margin-bottom: 70px;
     }
 
@@ -210,6 +231,10 @@ RESPONSIVE FIXES
         -moz-background-clip: padding;
         background-clip: padding-box;
     }
+
+    .features .feature {
+        height: 180px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -218,6 +243,7 @@ RESPONSIVE FIXES
     html {
         font-size: 60.5%;
     }
+
 }
 
 
