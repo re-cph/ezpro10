@@ -1,7 +1,6 @@
 /* =======================================================================
 Kane - Responsive App Landing Page 1.7
 ======================================================================= */
-
 /* --------------------------------------
 =========================================
 GLOBAL STYLES
@@ -288,10 +287,36 @@ header .full-screen {
     height: 100px;
 }
 
+/* TOP BAR ANIMATION */
+.sticky-navigation {
+  background: rgba(255,255,255,1);
+}
+
+.sticky-navigation.top {
+  background: rgba(255,255,255,0);
+}
+
+.sticky-navigation,
+.sticky-navigation .main-navigation .current a,
+.sticky-navigation .container > .navbar-header,
+.sticky-navigation .container > .navbar-header img {
+  -webkit-transition: all ease .5s;
+          transition: all ease .5s;
+}
+
+.sticky-navigation .container > .navbar-header {
+  height: 30px;
+}
+
+.sticky-navigation .container > .navbar-header img {
+  position: relative;
+  top: 0;
+}
+
 /* TOP BAR WITH NAVIGATION */
 
 .sticky-navigation {
-  min-height: 60px;
+  /*min-height: 60px;*/
   background: #FFFFFF;
   border: none;
   padding: 0 !important;
@@ -312,6 +337,10 @@ header .full-screen {
   outline: none;
 }
 
+.sticky-navigation.top .main-navigation .current a {
+  color: white !important;
+}
+
 .sticky-navigation .main-navigation li a {
   line-height: 30px;
   font-weight: 400;
@@ -321,6 +350,10 @@ header .full-screen {
 
 .sticky-navigation .main-navigation li a:hover {
     color: #000000;
+}
+
+.sticky-navigation.top .main-navigation li a:hover {
+    color: white;
 }
 
 .navbar-inverse .navbar-toggle {

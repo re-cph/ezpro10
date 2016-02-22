@@ -7,6 +7,9 @@ jQuery(window).load(function() {
 	jQuery(".status").fadeOut();
         // will fade out the whole DIV that covers the website.
 	jQuery(".preloader").delay(1000).fadeOut("slow");
+  if (matchMedia('(max-width: 767px)').matches) {
+    jQuery(".sticky-navigation").removeClass('top');
+  }
 })
 
 /* =================================
@@ -53,38 +56,48 @@ $(document).ready(function() {
 /* COLLAPSE NAVIGATION ON MOBILE AFTER CLICKING ON LINK - ADDED ON V1.5*/
 
 if (matchMedia('(max-width: 480px)').matches) {
-    $('.main-navigation a').on('click', function () {
-        $(".navbar-toggle").click();
-    });
+  $('.main-navigation a').on('click', function () {
+    $(".navbar-toggle").click();
+  });
 }
 
 
 /* NAVIGATION VISIBLE ON SCROLL */
 
+var lastScrollTop = 0,
+    scrollUp = false,
+    scrollDown = false;
+
 $(document).ready(function () {
-    mainNav();
+  mainNav();
 });
 
 $(window).scroll(function () {
-    mainNav();
+  mainNav();
 });
 
+
+// if (matchMedia('(min-width: 992px), (max-width: 767px)').matches) {
 if (matchMedia('(min-width: 992px), (max-width: 767px)').matches) {
   function mainNav() {
-        var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if (top > 40) $('.sticky-navigation').stop().animate({"top": '0'});
-
-        else $('.sticky-navigation').stop().animate({"top": '-60'});
-    }
+    var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+    if (top > 0) $('.sticky-navigation').removeClass('top');
+    else $('.sticky-navigation').addClass('top');
+  }
 }
 
 if (matchMedia('(min-width: 768px) and (max-width: 991px)').matches) {
   function mainNav() {
-        var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if (top > 40) $('.sticky-navigation').stop().animate({"top": '0'});
-
-        else $('.sticky-navigation').stop().animate({"top": '-120'});
+    var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+    if (top > 0) {
+      $('.sticky-navigation').removeClass('top');
+      // jQuery('.sticky-navigation .container > .navbar-header').animate({'height': '30'});
     }
+    else {
+      $('.sticky-navigation').addClass('top');
+      // jQuery('.sticky-navigation .container > .navbar-header').animate({'height': '0'});
+    }
+  }
 }
 
 

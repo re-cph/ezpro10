@@ -73,12 +73,29 @@ RESPONSIVE FIXES
         min-height: 780px;
     }
 
+    .nav > li > a {
+        padding: 10px 12px;
+    }
+
     .sticky-navigation .navbar-header {
         width: 100%;
         position: relative;
         text-align: center;
         margin-top: 10px;
     }
+
+    .sticky-navigation.top .container > .navbar-header {
+        height: 0;
+    }
+
+    .sticky-navigation.top .container > .navbar-header img {
+        top: -30px;
+    }
+
+    .navbar-brand {
+        margin-left: 0 !important;
+    }
+
     .sticky-navigation .navbar-header a {
         float: none !important;
     }
@@ -144,6 +161,10 @@ RESPONSIVE FIXES
         margin-bottom: 0;
     }
 
+    .sticky-navigation .navbar-header .navbar-brand {
+        padding: 10px 15px;
+    }
+    
     header .intro-section {
         padding-top: 9%;
     }
