@@ -154,9 +154,25 @@ wow.init();
 
 
 /* =================================
-===  OWL CROUSEL               ====
+===  OWL CAROUSEL               ====
 =================================== */
 $(document).ready(function () {
+
+
+      var afterOWLinit = function () {
+
+        // Move pagination to the top
+        $('#feedbacks').prepend($('.owl-controls'));
+
+        var paginatorsLink = $('.owl-controls span');
+
+        $.each(this.owl.userItems, function (i) {
+
+            $(paginatorsLink[i]).addClass('thumb' + (i+1));
+
+        });
+
+    }
 
     $("#feedbacks").owlCarousel({
 
@@ -164,7 +180,9 @@ $(document).ready(function () {
         slideSpeed: 800,
         paginationSpeed: 400,
         autoPlay: 5000,
-        singleItem: true
+        singleItem: true,
+        afterInit: afterOWLinit, // do some work after OWL init
+        afterUpdate : afterOWLinit
     });
 
     var owl = $("#screenshots");
@@ -179,6 +197,41 @@ $(document).ready(function () {
 
 
 });
+
+
+/* =================================
+=== OWL CAROUSEL PAGINATION HACK ===
+=================================== */
+
+$(document).ready(function () {
+
+  // $('#feedbacks').prepend($('.owl-controls'));
+
+  // var setPagination = function(array,element) {
+  //   var counter = 1;
+
+  //   $('.owl-controls .owl-pagination .owl-page > span').each(function() {
+
+  //     $(this).addClass('thumb' + counter++);
+
+  //   });
+
+
+  // }
+
+  // setPagination();
+
+  // $(window).bind('resize', setTimeout(500,setPagination));
+
+
+
+
+
+
+
+});
+
+
 
 
 /* =================================

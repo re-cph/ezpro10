@@ -601,9 +601,28 @@ object {
     font-size: 12px;
 }
 
+.testimonials .owl-theme .owl-controls {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
 .testimonials .owl-theme .owl-controls .owl-page span {
-    background: #ffffff;
+  /*display: none;*/
+    /*background: #ffffff;*/
+
     border-radius: 50%;
+    border: solid 1px white;
+
+    /*border: solid 2px rgba(0,0,0,0);*/
+/*
+    border: solid 2px -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
+    border: solid 2px -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(50%, rgba(0,0,0,0)), color-stop(51%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+    border: solid 2px -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
+    border: solid 2px -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
+    border: solid 2px -ms-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
+    border: solid 2px linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );*/
+
 }
 
 .testimonials .customNavigation a {
@@ -614,6 +633,60 @@ object {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.testimonials .message-why {
+  display: none;
+}
+
+/*---------------------------------------
+   SECTION:  CAROUSEL THUMBNAILS
+-----------------------------------------*/
+
+.testimonials .owl-theme .owl-controls .owl-page span {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb1 {
+  background-image: url('../images/clients-pic/1.jpg');
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb2 {
+  background-image: url('../images/clients-pic/2.jpg');
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb3 {
+  background-image: url('../images/clients-pic/3.jpg');
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb4 {
+  background-image: url('../images/clients-pic/4.jpg');
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb5 {
+  background-image: url('../images/clients-pic/5.jpg');
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb6 {
+  background-image: url('../images/clients-pic/6.jpg');
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb7 {
+  background-image: url('../images/clients-pic/7.jpg');
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb8 {
+  background-image: url('../images/clients-pic/8.jpg');
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb9 {
+  background-image: url('../images/clients-pic/9.jpg');
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span.thumb10 {
+  background-image: url('../images/clients-pic/10.jpg');
+}
 
 /*---------------------------------------
    SECTION:  SERVICES
