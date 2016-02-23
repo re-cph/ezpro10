@@ -105,11 +105,11 @@ if (matchMedia('(min-width: 768px) and (max-width: 991px)').matches) {
 /* =================================
 ===  DOWNLOAD BUTTON CLICK SCROLL ==
 =================================== */
-jQuery(function( $ ){
-			$('#download-button').localScroll({
-				duration:1000
-			});
-		});
+jQuery(function( $ ) {
+	$('#download-button').localScroll({
+		duration:1000
+	});
+});
 
 
 /* =================================
@@ -143,6 +143,7 @@ $('a.scrollto').bind('click.smoothscroll', function (event) {
 });
 
 
+
 /* =================================
 ===  WOW ANIMATION             ====
 =================================== */
@@ -151,6 +152,7 @@ wow = new WOW(
     mobile: false
   });
 wow.init();
+
 
 
 /* =================================
@@ -167,19 +169,17 @@ $(document).ready(function () {
         var paginatorsLink = $('.owl-controls span');
 
         $.each(this.owl.userItems, function (i) {
-
             $(paginatorsLink[i]).addClass('thumb' + (i+1));
-
         });
-
     }
 
-    $("#feedbacks").owlCarousel({
 
+    $("#feedbacks").owlCarousel({
         navigation: false, // Show next and prev buttons
         slideSpeed: 800,
         paginationSpeed: 400,
-        autoPlay: 5000,
+        autoPlay: 10000,
+        stopOnHover: true,
         singleItem: true,
         afterInit: afterOWLinit, // do some work after OWL init
         afterUpdate : afterOWLinit
@@ -195,42 +195,23 @@ $(document).ready(function () {
         itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
     });
 
+    // $('#feedbacks .owl-item').on('mouseover', function (e){
+    //   console.log('hover', owl.trigger('stop.owl.autoplay'));
+    //     owl.trigger('stop.owl.autoplay');
+    // });
+
+    // $('#feedbacks .owl-item').on('mouseleave', function (e){
+    //     console.log('hover no more', owl.trigger('play.owl.autoplay'));
+    // });
+
+    // $('#feedbacks .owl-item img').on('click', function (e){
+    //     e.preventDefault();
+    //     var slideTo = $(this).find('img').data('to');
+    //     owl.trigger('to.owl.carousel', [slideTo]);
+    //     owl.trigger('stop.owl.autoplay');
+    // });
 
 });
-
-
-/* =================================
-=== OWL CAROUSEL PAGINATION HACK ===
-=================================== */
-
-$(document).ready(function () {
-
-  // $('#feedbacks').prepend($('.owl-controls'));
-
-  // var setPagination = function(array,element) {
-  //   var counter = 1;
-
-  //   $('.owl-controls .owl-pagination .owl-page > span').each(function() {
-
-  //     $(this).addClass('thumb' + counter++);
-
-  //   });
-
-
-  // }
-
-  // setPagination();
-
-  // $(window).bind('resize', setTimeout(500,setPagination));
-
-
-
-
-
-
-
-});
-
 
 
 
@@ -244,6 +225,7 @@ $(document).ready(function () {
     });
 
 });
+
 
 
 /* =================================
