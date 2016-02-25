@@ -464,7 +464,11 @@ header .intro-section .buttons {
     width: 100%;
 }
 
-.msf{
+.msf-map img {
+  max-width: 570px;
+}
+
+.msf {
     padding-top: 80px;
 }
 
