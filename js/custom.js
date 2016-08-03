@@ -169,7 +169,8 @@ $(document).ready(function () {
         var paginatorsLink = $('.owl-controls span');
 
         $.each(this.owl.userItems, function (i) {
-            $(paginatorsLink[i]).addClass('thumb' + (i+1));
+            var bgImg = $($('.owl-item')[i]).find('img').attr('src');
+            $(paginatorsLink[i]).css('background-image','url("'+bgImg+'")');
         });
     }
 
