@@ -134,6 +134,10 @@ RESPONSIVE FIXES
         padding-top: 10%;
     }
 
+    .buybox-text {
+        min-height: 186px;
+    }
+
     .features .features-left,
     .features .features-right {
         margin-top: 0;
@@ -154,7 +158,9 @@ RESPONSIVE FIXES
 }
 
 @media (max-width: 767px) {
-     
+    .desktop-only {
+        display: none;
+    }
     html {
         font-size: 80%;
     }
@@ -231,6 +237,25 @@ RESPONSIVE FIXES
     
     header .intro-section {
         padding-top: 9%;
+    }
+
+    .buybox-left,
+    .buybox-right {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .buybox-left img.flask {
+        right: 20px;
+    }
+
+    .buybox-right img.flask {
+        left: 20px;
+    }
+
+    .buybox-right .buybox-container {
+        margin-left: 105px;
+        margin-top: 60px;
     }
 
     .features .features-left,

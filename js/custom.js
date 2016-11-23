@@ -330,12 +330,16 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 var userLang = navigator.language || navigator.userLanguage;
 if (userLang === 'da-DK' || userLang === 'da' || userLang === 'no' || userLang === 'sv' || userLang === 'sv-FI' ) {
-    $('.lang-da').show();
+    var pageLang = 'da';
 } else {
-    $('.lang-en').show();
+    var pageLang = 'en';
 }
 
+$('.lang-'+pageLang).show();
+$('body').addClass('language-'+pageLang);
+
 $('.language-switch').click(function(e) {
-    e.preventDefault();
     $('.lang-da, .lang-en').toggle();
+    if (pageLang === 'en') { pageLang = 'da'; } else { pageLang = 'en'; }
+    $('body').removeClass('language-da').removeClass('language-en').addClass('language-'+pageLang);
 });

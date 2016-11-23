@@ -12,6 +12,12 @@ GLOBAL STYLES
     display: none;
 }
 
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 html {
     font-size: 100%;
 }
@@ -406,8 +412,59 @@ header .intro-section .buttons {
 }
 
 /*---------------------------------------
-   SECTION:  FEATURES
+   SECTION:  BUYBOX
 -----------------------------------------*/
+
+.buybox .buybox-container {
+    box-sizing: border-box;
+}
+
+.buybox-left .buybox-container,
+.buybox-left .free-shipping {
+    text-align: right;
+    margin-right: 120px;
+}
+
+.buybox-right .buybox-container,
+.buybox-right .free-shipping {
+    text-align: left;
+    margin-left: 120px;
+}
+
+.buybox-text {
+    padding: 15px 0;
+}
+
+.buybox img.flask {
+    position: absolute;
+    bottom: 0;
+    float: left;
+    margin-bottom: 26px;
+}
+
+.buybox-left img.flask {
+    right: 0;
+}
+
+.buybox-right img.flask {
+    left: 0;
+}
+
+.buybox-left .free-shipping,
+.buybox-right .free-shipping {
+    clear: both;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.buynow-footer {
+    padding-top: 80px;
+}
+
+/*---------------------------------------
+   SECTION:  BUYBOX / FEATURES
+-----------------------------------------*/
+
 
 .features {
     padding-top: 80px;
@@ -415,7 +472,8 @@ header .intro-section .buttons {
     background: #ffffff;
 }
 
-.features .features-left {
+.features .features-left,
+.buybox .buybox-left {
     text-align: right;
     margin-top: 26px;
     margin-bottom: 80px;
@@ -426,7 +484,8 @@ header .intro-section .buttons {
     margin-left: 20px;
 }
 
-.features .features-right {
+.features .features-right,
+.buybox .buybox-right {
     text-align: left;
     margin-top: 26px;
     margin-bottom: 80px;
