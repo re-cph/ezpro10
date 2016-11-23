@@ -15,9 +15,8 @@ RESPONSIVE FIXES
     .animated {
         -webkit-transform: translateZ(0);
     }
-
     
-      header {
+    header {
         background-attachment: scroll;
     }
 }

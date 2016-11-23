@@ -414,6 +414,13 @@ header .intro-section .buttons {
 /*---------------------------------------
    SECTION:  BUYBOX
 -----------------------------------------*/
+#buynow {
+    padding-top: 30px;
+}
+
+#buynow .section-header {
+    padding-bottom: 40px;
+}
 
 .buybox .buybox-container {
     box-sizing: border-box;
@@ -455,6 +462,16 @@ header .intro-section .buttons {
     clear: both;
     font-size: 12px;
     font-style: italic;
+    width: 185px;
+    text-align: center;
+}
+
+.buybox-left .free-shipping {
+    float: right;
+}
+
+.buybox-right .free-shipping {
+    float: left;
 }
 
 .buynow-footer {
