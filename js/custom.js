@@ -49,7 +49,6 @@ $(document).ready(function() {
     filter: ':not(.external)',
     changeHash: true
   });
-  
 });
 
 
@@ -328,3 +327,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   )
   document.querySelector('head').appendChild(msViewportStyle)
 }
+
+var userLang = navigator.language || navigator.userLanguage;
+if (userLang === 'da-DK' || userLang === 'da' || userLang === 'no' || userLang === 'sv' || userLang === 'sv-FI' ) {
+    $('.lang-da').show();
+} else {
+    $('.lang-en').show();
+}
+
+$('.language-switch').click(function(e) {
+    e.preventDefault();
+    $('.lang-da, .lang-en').toggle();
+});

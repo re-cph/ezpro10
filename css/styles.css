@@ -7,6 +7,11 @@ GLOBAL STYLES
 =========================================
 -----------------------------------------*/
 
+.lang-en,
+.lang-da {
+    display: none;
+}
+
 html {
     font-size: 100%;
 }
@@ -316,8 +321,6 @@ header .full-screen {
 /* TOP BAR WITH NAVIGATION */
 
 .sticky-navigation {
-  /*min-height: 60px;*/
-  background: #FFFFFF;
   border: none;
   padding: 0 !important;
   margin-bottom: 0 !important;
@@ -331,6 +334,14 @@ header .full-screen {
   -webkit-backface-visibility: hidden;
 }
 
+.language-switch {
+    width: auto;
+    color: #999;
+    float: left;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+    
 .sticky-navigation .main-navigation .current a {
   color: #000000 !important;
   position: relative;
@@ -341,18 +352,22 @@ header .full-screen {
   color: white !important;
 }
 
-.sticky-navigation .main-navigation li a {
+.sticky-navigation .main-navigation li a,
+.sticky-navigation .main-navigation .language-switch {
   line-height: 30px;
   font-weight: 400;
   font-size: 13px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.sticky-navigation .main-navigation li a:hover {
+.sticky-navigation .main-navigation li a:hover,
+.sticky-navigation .main-navigation .language-switch:hover {
     color: #000000;
 }
 
-.sticky-navigation.top .main-navigation li a:hover {
+.sticky-navigation.top .main-navigation li a:hover,
+.sticky-navigation.top .main-navigation .language-switch:hover {
     color: white;
 }
 
@@ -809,23 +824,23 @@ object {
    SECTION:  FOOTER
 -----------------------------------------*/
 
-footer{
+footer {
     background: black;
     color: white;
 }
-footer h2{
+footer h2 {
     margin-top: 80px;
 }
 
-footer h3{
+footer h3 {
     margin-bottom: 0px;
 }
 
-footer h4{
+footer h4 {
     margin-top: 0px;
 }
 
-footer p{
+footer p {
     height: 115px;
 }
 

@@ -34,6 +34,10 @@ RESPONSIVE FIXES
         min-height: 800px;
     }
 
+    #kane-navigation {
+        float: right;
+    }
+
     .app-brief .left-align {
         text-align: center;
     }
@@ -68,7 +72,6 @@ RESPONSIVE FIXES
 
 @media (min-width: 768px) and (max-width: 991px) {
  
-    
     html {
         font-size: 90%;
     }
@@ -79,6 +82,19 @@ RESPONSIVE FIXES
 
     .nav > li > a {
         padding: 10px 12px;
+    }
+
+    .navbar-nav {
+        width: inherit;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .language-switch {
+        margin-top: 10px;
+        margin-left: 5px;
     }
 
     .sticky-navigation .navbar-header {
@@ -110,7 +126,7 @@ RESPONSIVE FIXES
     
     .sticky-navigation .main-navigation {
         text-align: center;
-        width: 100%;
+        width: auto;
         padding-top: 0;
     }
 
@@ -138,8 +154,7 @@ RESPONSIVE FIXES
 }
 
 @media (max-width: 767px) {
- 
-    
+     
     html {
         font-size: 80%;
     }
@@ -157,6 +172,48 @@ RESPONSIVE FIXES
         padding: 20px;
     }
     
+    .navbar-header {
+        float: left;
+    }
+
+    .language-switch {
+        float: right;
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+
+    .navbar-toggle,
+    #kane-navigation {
+        display: none;
+    }
+
+    .sticky-navigation {
+        /*background: rgba(255,255,255,0) !important;*/
+        /*box-shadow: none;*/
+    }
+
+/*
+    #kane-navigation {
+        width: 100%;
+        margin: 0;
+        background: #4b5459;
+    }
+
+    #kane-navigation ul {
+        width: auto;
+        line-height: normal;
+        text-align: center;
+    }
+
+    #kane-navigation ul li {
+        display: block;
+    }
+*/
+
+    .language-switch {
+        margin-left: 0;
+    }
+
     .navbar-inverse .navbar-nav {
         padding-left: 10px;
         line-height: normal;
@@ -270,8 +327,7 @@ RESPONSIVE FIXES
 }
 
 @media (max-width: 320px) {
- 
-    
+     
     html {
         font-size: 60.5%;
     }
