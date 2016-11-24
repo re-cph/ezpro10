@@ -25,8 +25,15 @@
       appId: '6',
     });
 
+    var userLanguage = navigator.language || navigator.userLanguageuage;
+    if (userLanguage === 'da-DK' || userLanguage === 'da' || userLanguage === 'no' || userLanguage === 'sv' || userLanguage === 'sv-FI' ) {
+        var pageLanguage = 'da';
+    } else {
+        var pageLanguage = 'en';
+    }
+
     var buttonText = "BUY NOW";
-    if (pageLang === 'da') { buttonText = "KØB NU"; }
+    if (pageLanguage === 'da') { buttonText = "KØB NU"; }
 
     var options = {
       "product": {
