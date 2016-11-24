@@ -478,6 +478,11 @@ header .intro-section .buttons {
     padding-top: 80px;
 }
 
+.buynow-footer a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /*---------------------------------------
    SECTION:  BUYBOX / FEATURES
 -----------------------------------------*/
@@ -498,7 +503,6 @@ header .intro-section .buttons {
 
 .features .features-left .icon-container {
     float: right;
-    margin-left: 20px;
 }
 
 .features .features-right,
@@ -510,7 +514,6 @@ header .intro-section .buttons {
 
 .features .features-right .icon-container {
     float: left;
-    margin-right: 20px;
 }
 
 .features .features-right .feature-details {

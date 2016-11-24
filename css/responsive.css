@@ -321,6 +321,10 @@ RESPONSIVE FIXES
         margin-top: 15px;
     }
 
+    .buybox-right .buybox-container {
+        width: 185px;
+    }
+
     .testimonials, 
     .download { 
         background-attachment: inherit !important; 
