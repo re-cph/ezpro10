@@ -429,13 +429,13 @@ header .intro-section .buttons {
 .buybox-left .buybox-container,
 .buybox-left .free-shipping {
     text-align: right;
-    margin-right: 120px;
+    margin-right: 105px;
 }
 
 .buybox-right .buybox-container,
 .buybox-right .free-shipping {
     text-align: left;
-    margin-left: 120px;
+    margin-left: 105px;
 }
 
 .buybox-text {
