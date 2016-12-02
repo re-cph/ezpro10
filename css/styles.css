@@ -658,9 +658,11 @@ object {
 }
 
 .testimonials {
+/*
     background: url(../images/big/beach.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
             background-size: cover;
+*/
     color: #ffffff;
 }
 .testimonials.vision {
