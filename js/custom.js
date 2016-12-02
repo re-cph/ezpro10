@@ -177,7 +177,7 @@ $(document).ready(function () {
             var bgImg = $($('.owl-item')[i]).find('.image').attr('data-bg-img');
             
             // Insert background image
-            $('section.testimonials.ambassadors .inlay').prepend('<div style="z-index: 1;background: url(\'images/clients-pic/'+bgImg+'\') 50% 10% no-repeat fixed;" data-number="'+i+'" id="bg-'+i+'" class="background-image"></div>');
+            $('section.testimonials.ambassadors .inlay').prepend('<div style="background-image: url(images/clients-pic/'+bgImg+');" data-number="'+i+'" id="bg-'+i+'" class="background-image"></div>');
         });
 
         $('section.testimonials.ambassadors .background-image, .my-overlay').height($('section.testimonials').height());

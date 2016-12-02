@@ -704,7 +704,16 @@ object {
     -webkit-background-size: cover;
             background-size: cover;
     position: absolute;
+    z-index: 1;
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    .testimonials .background-image {
+        background-attachment: fixed;
+    }
 }
 
 .testimonials .feedback .message {
