@@ -160,17 +160,44 @@ wow.init();
 $(document).ready(function () {
 
 
-      var afterOWLinit = function () {
+    var afterOWLinit = function () {
 
         // Move pagination to the top
         $('#feedbacks').prepend($('.owl-controls'));
 
         var paginatorsLink = $('.owl-controls span');
-
+        
+        $('section.testimonials.ambassadors .background-image, section.testimonials.ambassadors .inlay').remove();
+        $('section.testimonials.ambassadors').prepend('<div class="inlay"><div class="my-overlay"></div></div>');
+        
         $.each(this.owl.userItems, function (i) {
-            var bgImg = $($('.owl-item')[i]).find('img').attr('src');
-            $(paginatorsLink[i]).css('background-image','url("'+bgImg+'")');
+            var profileImg = $($('.owl-item')[i]).find('img').attr('src');
+            $(paginatorsLink[i]).css('background-image','url("'+profileImg+'")')
+                                .attr('data-number',i);
+            var bgImg = $($('.owl-item')[i]).find('.image').attr('data-bg-img');
+            
+            // Insert background image
+            $('section.testimonials.ambassadors .inlay').prepend('<div style="background: url(\'images/clients-pic/'+bgImg+'\') no-repeat center fixed;" data-number="'+i+'" id="bg-'+i+'" class="background-image"></div>');
         });
+
+        $('section.testimonials.ambassadors .background-image, .my-overlay').height($('section.testimonials').height());
+        // $('section.testimonials.ambassadors .background-image').css('opacity',0.0);
+        // $('section.testimonials.ambassadors .background-image:first-of-type').css('opacity',1.0);
+    }
+
+    var beforeOWLmove = function() {
+        var active = $('#feedbacks .owl-pagination .owl-page.active span').attr('data-number');
+        $('#bg-'+active).addClass('inactivate').css('z-index',0);
+    }
+
+    var afterOWLmove = function() {
+        var active = $('#feedbacks .owl-pagination .owl-page.active span').attr('data-number');
+        $('#bg-'+active).css('z-index',1);
+        $('#bg-'+active).animate({ opacity: 1.0 }, 300);
+        setTimeout(function() {
+            console
+            $('.background-image.inactivate').css('opacity',0.0).removeClass('inactivate');
+        },300);
     }
 
 
@@ -182,7 +209,9 @@ $(document).ready(function () {
         stopOnHover: true,
         singleItem: true,
         afterInit: afterOWLinit, // do some work after OWL init
-        afterUpdate : afterOWLinit
+        afterUpdate : afterOWLinit,
+        beforeMove: beforeOWLmove, 
+        afterMove: afterOWLmove, 
     });
 
     var owl = $("#screenshots");
@@ -192,7 +221,7 @@ $(document).ready(function () {
         itemsDesktop: [1000, 4], //5 items between 1000px and 901px
         itemsDesktopSmall: [900, 2], // betweem 900px and 601px
         itemsTablet: [600, 1], //2 items between 600 and 0
-        itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
+        itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
     });
 
     // $('#feedbacks .owl-item').on('mouseover', function (e){

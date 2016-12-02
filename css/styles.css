@@ -643,6 +643,19 @@ object {
 /*---------------------------------------
    SECTION:  TESTIMONIALS
 -----------------------------------------*/
+.inlay {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.my-overlay {
+    background: rgba(0,0,0,0.55);
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
 .testimonials {
     background: url(../images/big/beach.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
@@ -657,6 +670,7 @@ object {
 .testimonials .color-overlay {
     padding-top: 110px;
     padding-bottom: 110px;
+    z-index: 2;
 }
 
 .testimonials .feedback {
@@ -681,6 +695,13 @@ object {
 .testimonials .feedback .image img {
     width: 100%;
     vertical-align: top;
+}
+
+.testimonials .background-image {
+    -webkit-background-size: cover;
+            background-size: cover;
+    position: absolute;
+    width: 100%;
 }
 
 .testimonials .feedback .message {
