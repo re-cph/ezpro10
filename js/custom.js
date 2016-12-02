@@ -177,12 +177,13 @@ $(document).ready(function () {
             var bgImg = $($('.owl-item')[i]).find('.image').attr('data-bg-img');
             
             // Insert background image
-            $('section.testimonials.ambassadors .inlay').prepend('<div style="background: url(\'images/clients-pic/'+bgImg+'\') no-repeat center fixed;" data-number="'+i+'" id="bg-'+i+'" class="background-image"></div>');
+            $('section.testimonials.ambassadors .inlay').prepend('<div style="z-index: 1;background: url(\'images/clients-pic/'+bgImg+'\') 50% 10% no-repeat fixed;" data-number="'+i+'" id="bg-'+i+'" class="background-image"></div>');
         });
 
         $('section.testimonials.ambassadors .background-image, .my-overlay').height($('section.testimonials').height());
-        // $('section.testimonials.ambassadors .background-image').css('opacity',0.0);
-        // $('section.testimonials.ambassadors .background-image:first-of-type').css('opacity',1.0);
+        $('section.testimonials.ambassadors .background-image').css('z-index',0).css('opacity',0.0);
+        var active = $('#feedbacks .owl-pagination .owl-page.active span').attr('data-number');
+        $('#bg-'+active).css('z-index',1).css('opacity',1.0);
     }
 
     var beforeOWLmove = function() {
@@ -195,7 +196,6 @@ $(document).ready(function () {
         $('#bg-'+active).css('z-index',1);
         $('#bg-'+active).animate({ opacity: 1.0 }, 300);
         setTimeout(function() {
-            console
             $('.background-image.inactivate').css('opacity',0.0).removeClass('inactivate');
         },300);
     }
