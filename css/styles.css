@@ -882,14 +882,10 @@ object {
 /*---------------------------------------
    SECTION:  DOWNLOAD
 -----------------------------------------*/
-#download{
-    display: none;
-}
-
 .download {
-    /*background: url('../images/big/lift.jpg') no-repeat center fixed;*/
+    background: url('../images/big/mette.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     color: #ffffff;
 }
 
