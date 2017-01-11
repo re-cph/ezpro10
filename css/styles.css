@@ -391,20 +391,27 @@ header .only-logo .navbar .navbar-header {
     float: none;
 }
 
-/* INTRO */
+/*---------------------------------------
+   SECTION:  INTRO SECTION
+-----------------------------------------*/
 
 header .intro-section {
     margin: auto;
     padding-top: 15%;
 }
 
-header .intro-section .intro {
+header .intro-section h1.intro {
     color: #ffffff;
     margin-bottom: 36px;
 }
 
 header .intro-section h5 {
     color: #ffffff;
+}
+
+header .intro-section img {
+    width: 280px;
+    height: 102px;
 }
 
 header .intro-section .buttons {
