@@ -151,8 +151,8 @@ h2 {
 }
 
 h1 {
-    font-size: 3.75rem;
-    line-height: 4.688rem;
+    font-size: 6.75rem;
+    line-height: 6rem;
 }
 
 h2 {
@@ -657,7 +657,7 @@ object {
 }
 
 .my-overlay {
-    background: rgba(0,0,0,0.55);
+    background: rgba(0,0,0,0.7);
     width: 100%;
     position: absolute;
     z-index: 1;
