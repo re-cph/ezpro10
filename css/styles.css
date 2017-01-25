@@ -451,7 +451,7 @@ header .intro-section .buttons {
 
 .buybox img.flask {
     position: absolute;
-    bottom: 0;
+    /*top: 100px; - is set in responsive */
     float: left;
     margin-bottom: 26px;
 }
