@@ -429,6 +429,10 @@ header .intro-section .buttons {
     padding-bottom: 40px;
 }
 
+.buybox {
+    position: relative;
+}
+
 .buybox .buybox-container {
     box-sizing: border-box;
 }
@@ -451,9 +455,9 @@ header .intro-section .buttons {
 
 .buybox img.flask {
     position: absolute;
-    /*top: 100px; - is set in responsive */
     float: left;
     margin-bottom: 26px;
+    bottom: 0;
 }
 
 .buybox-left img.flask {

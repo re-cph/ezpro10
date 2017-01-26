@@ -69,12 +69,6 @@ RESPONSIVE FIXES
 	}
 }
 
-@media (min-width: 768px) {
-	.buybox img.flask {
-		top: 100px;
-	}
-}
-
 @media (min-width: 768px) and (max-width: 991px) {
  
 	html {
@@ -244,6 +238,10 @@ RESPONSIVE FIXES
 		padding-top: 9%;
 	}
 
+	.buybox .buybox-text {
+		height: auto !important;
+	}
+
 	.buybox img.flask {
 		bottom: 0;
 	}
@@ -252,14 +250,6 @@ RESPONSIVE FIXES
 	.buybox-right {
 		max-width: 320px;
 		margin: 0 auto;
-	}
-
-	.buybox-left img.flask {
-		right: 20px;
-	}
-
-	.buybox-right img.flask {
-		left: 20px;
 	}
 
 	.buybox-right .buybox-container {
@@ -368,6 +358,14 @@ RESPONSIVE FIXES
 	 
 	html {
 		font-size: 60.5%;
+	}
+
+	.buybox-left img.flask {
+		right: 4px;
+	}
+
+	.buybox-right img.flask {
+		left: 4px;
 	}
 
 }
