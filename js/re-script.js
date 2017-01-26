@@ -13,8 +13,10 @@ $(document).ready(function() {
     
     if (boxLeft.height() > boxRight.height()) {
       boxRight.find('.buybox-text').height(boxLeft.find('.buybox-text').height());
+      boxRight.css('height','auto');
     } else {
       boxLeft.find('.buybox-text').height(boxRight.find('.buybox-text').height());
+      boxLeft.css('height','auto');
     }
   }
 
