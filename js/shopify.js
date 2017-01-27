@@ -61,8 +61,9 @@
         },
         "button": {
           "background-color": "#3e89cc",
-          "padding-left": "56px",
-          "padding-right": "55px",
+          "padding-left": "12px",
+          "padding-right": "12px",
+          "width": "100%",
           ":hover": {
             "background-color": "#387bb8"
           },
