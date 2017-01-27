@@ -1,22 +1,35 @@
 $(document).ready(function() {
-  originalBoxLeftSize = $('.buybox-left').height();
-  originalBoxRightSize = $('.buybox-Right').height();
-
-  // Resize Buy box left or right, so they are the same size.
+  //////////////|\\\\\\\\\\\\\\\
+  //|  Resize Buy box left   |\\
+  //| or right, so they are  |\\
+  //|     the same size.     |\\
+  //////////////|\\\\\\\\\\\\\\\
   var buyBoxSize = function () {
     var boxLeft = $('.buybox-left');
     var boxRight = $('.buybox-right');
+    var boxLeftText = boxLeft.find('.buybox-text');
+    var boxRightText = boxRight.find('.buybox-text');
 
-    // Reset height
-    boxLeft.height(originalBoxLeftSize);
-    boxRight.height(originalBoxRightSize);
+    originalBoxLeftSize = boxLeftText.attr('data-org-box-left');
+    originalBoxRightSize = boxRightText.attr('data-org-box-right');
+    
+    if (!originalBoxLeftSize && !originalBoxRightSize) {
+      originalBoxLeftSize = boxLeftText.height();
+      originalBoxRightSize = boxRightText.height();
+      boxLeftText.attr('data-org-box-left', originalBoxLeftSize);
+      boxRightText.attr('data-org-box-right', originalBoxRightSize);
+    }
+
+    // Reset height to original
+    boxLeftText.height(originalBoxLeftSize);
+    boxRightText.height(originalBoxRightSize);
     
     if (boxLeft.height() > boxRight.height()) {
-      boxRight.find('.buybox-text').height(boxLeft.find('.buybox-text').height());
-      boxRight.css('height','auto');
+      var leftHeight = boxRightText.height();
+      boxRightText.height(leftHeight);
     } else {
-      boxLeft.find('.buybox-text').height(boxRight.find('.buybox-text').height());
-      boxLeft.css('height','auto');
+      var rightHeight = boxRightText.height();
+      boxLeftText.height(rightHeight);
     }
   }
 
