@@ -681,6 +681,11 @@ object {
     background: url(../images/big/lift.jpg) no-repeat center fixed;
 }
 
+.testimonials.powerblend {
+    /*background: url(../images/big/run.jpg) no-repeat center fixed;*/
+    background: url(../images/big/powerblend-breakfast.jpg) no-repeat center fixed;
+}
+
 .testimonials .color-overlay {
     padding-top: 110px;
     padding-bottom: 110px;

@@ -160,5 +160,23 @@
         options: options
       });
     });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [9542061511],
+        node: document.getElementById('product-component-ef1da729b1e'),
+        moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+        options: options
+      });
+    });    
+    
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [9542082567],
+        node: document.getElementById('product-component-a15233353a7'),
+        moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+        options: options
+      });
+    }); 
   }
 })();

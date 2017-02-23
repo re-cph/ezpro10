@@ -180,7 +180,7 @@ $(document).ready(function () {
             $('section.testimonials.ambassadors .inlay').prepend('<div style="background-image: url(images/clients-pic/'+bgImg+');" data-number="'+i+'" id="bg-'+i+'" class="background-image"></div>');
         });
 
-        $('section.testimonials.ambassadors .background-image, .my-overlay').height($('section.testimonials').height());
+        $('section.testimonials.ambassadors .background-image, .my-overlay').height($('#ambassadors').height());
         $('section.testimonials.ambassadors .background-image').css('z-index',0).css('opacity',0.0);
         var active = $('#feedbacks .owl-pagination .owl-page.active span').attr('data-number');
         $('#bg-'+active).css('z-index',1).css('opacity',1.0);
