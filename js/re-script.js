@@ -35,4 +35,17 @@ $(document).ready(function() {
 
   buyBoxSize();
   $(window).bind('resize', buyBoxSize);
+
+  // Animated scroll to anchors
+  var scrollAnimationTime = 1200;
+  $('a.rescroll').bind('click.smoothscroll', function (event) {
+    event.preventDefault();
+    var target = this.hash;
+    $('html, body').animate({
+      'scrollTop': $(target).offset().top
+    }, scrollAnimationTime, function () {
+      window.location.hash = target;
+    });
+  });
+
 });
