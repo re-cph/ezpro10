@@ -449,7 +449,8 @@ header .intro-section .buttons {
     margin-left: 105px;
 }
 
-.buybox-text {
+.buybox-text,
+.buybox-text-fixed {
     padding: 15px 0;
 }
 
