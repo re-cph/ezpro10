@@ -159,7 +159,6 @@ wow.init();
 =================================== */
 $(document).ready(function () {
 
-
     var afterOWLinit = function () {
 
         // Move pagination to the top
@@ -340,7 +339,7 @@ $('.expand-form').simpleexpand({
 ===  STELLAR                    ====
 =================================== */
 $(window).stellar({ 
-horizontalScrolling: false 
+    horizontalScrolling: false 
 });
 
 

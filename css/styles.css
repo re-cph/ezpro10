@@ -310,7 +310,8 @@ header .full-screen {
 .sticky-navigation,
 .sticky-navigation .main-navigation .current a,
 .sticky-navigation .container > .navbar-header,
-.sticky-navigation .container > .navbar-header img {
+.sticky-navigation .container > .navbar-header img,
+.sticky-navigation .container > .navbar-header bg-image {
   -webkit-transition: all ease .5s;
           transition: all ease .5s;
 }
@@ -320,8 +321,21 @@ header .full-screen {
 }
 
 .sticky-navigation .container > .navbar-header img {
+/*  position: relative;
+  top: 4px;
+  width: 80px;*/
+}
+.sticky-navigation .container > .navbar-header .bg-image {
   position: relative;
-  top: 0;
+  top: 9px;
+  width: 80px;
+  height: 14px;
+  background-image: url('/images/svg/ezypro_logo_upayoff.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sticky-navigation.top .container > .navbar-header .bg-image {
+  background-image: url('/images/svg/ezypro_logo_upayoff_negative.svg');
 }
 
 /* TOP BAR WITH NAVIGATION */
@@ -389,6 +403,13 @@ header .only-logo .navbar {
 
 header .only-logo .navbar .navbar-header {
     float: none;
+}
+
+header .only-logo .navbar .navbar-header img {
+    top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 24px;
 }
 
 /*---------------------------------------
@@ -1023,6 +1044,10 @@ footer .contact-box .expanded-contact-form .textarea-box {
 
 footer .contact-box .expanded-contact-form .textarea-box:active {
     color: #000;
+}
+
+footer .footer-logo {
+    margin-left: 24px;
 }
 
 footer .social-icons {

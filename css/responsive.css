@@ -21,8 +21,7 @@ RESPONSIVE FIXES
 	}
 }
 
- @media (max-width: 991px) {
- 
+@media (max-width: 991px) {
 	
 	body {
 		font-size: 15px;
@@ -46,8 +45,8 @@ RESPONSIVE FIXES
 		margin: auto;
 	}
 
-	footer p{
-			height: auto;
+	footer p {
+		height: auto;
 	}
 
 	.msf-map img {
