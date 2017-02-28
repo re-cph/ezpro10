@@ -178,5 +178,26 @@
         options: options
       });
     }); 
+
+    //4 pcs Moringa Shake
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [7762674055],
+        node: document.getElementById('product-component-613b1dc7cc5'),
+        moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+        options: options
+      });
+    }); 
+
+    //4 pcs Power Shake
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [5429689543],
+        node: document.getElementById('product-component-6e9b8307985'),
+        moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+        options: options
+      });
+    }); 
+    
   }
 })();
