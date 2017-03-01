@@ -8,15 +8,21 @@ GLOBAL STYLES
 -----------------------------------------*/
 
 .lang-en,
-.lang-da {
-    display: none;
-}
+.lang-da { display: none; }
 
-.clearfix {
+.clearfix:before {
     content: "";
     clear: both;
     display: table;
 }
+
+.fl { float: left; }
+.fr { float: right; }
+.fn { float: none; }
+
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear: both; }
 
 html {
     font-size: 100%;
@@ -458,14 +464,12 @@ header .intro-section .buttons {
     box-sizing: border-box;
 }
 
-.buybox-left .buybox-container,
-.buybox-left .free-shipping {
+.buybox-left .buybox-container {
     text-align: right;
     margin-right: 105px;
 }
 
-.buybox-right .buybox-container,
-.buybox-right .free-shipping {
+.buybox-right .buybox-container {
     text-align: left;
     margin-left: 105px;
 }
@@ -499,12 +503,27 @@ header .intro-section .buttons {
     text-align: center;
 }
 
+.buynow-group .free-shipping {
+    width: 100%;
+    margin-left: 0 !important;
+}
+
 .buybox-left .free-shipping {
-    float: right;
+    float: left;
 }
 
 .buybox-right .free-shipping {
+    margin-left: 105px;
     float: left;
+}
+
+.buynow-group {
+    position: relative;
+}
+
+.buynow-group .left,
+.buynow-group .right {
+    width: 170px;
 }
 
 .buynow-footer {

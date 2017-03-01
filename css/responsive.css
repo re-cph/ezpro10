@@ -3,10 +3,41 @@
 RESPONSIVE FIXES
 =========================================
 -----------------------------------------*/
- 
+@media (min-width: 1200px) {
+	.buybox-left .buynow-group .left {
+		position: absolute;
+    bottom: 0;
+    left: 0;
+	}
+	.buybox-right .buynow-group .right {
+		position: absolute;
+    bottom: 0;
+    right: 0;
+	}
+}
+
 @media (max-width: 1199px) {
 	.features .feature {
 		height: 200px;
+	}
+	.buybox-left .free-shipping,
+	.buybox-right .free-shipping {
+	    clear: both;
+	    font-size: 12px;
+	    font-style: italic;
+	    text-align: center;
+	}
+	.buynow-group .left,
+	.buynow-group .right {
+    width: 100%;
+	}
+
+	.buybox-right .buynow-group .fr {
+    float: left;
+	}
+
+	.buybox-left .buynow-group .fl {
+    float: right;
 	}
 }
 
@@ -18,6 +49,12 @@ RESPONSIVE FIXES
 	
 	header {
 		background-attachment: scroll;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+	.buynow-group {
+    margin-top: 40px;
 	}
 }
 
@@ -45,6 +82,11 @@ RESPONSIVE FIXES
 		margin: auto;
 	}
 
+	.buynow-group .left,
+	.buynow-group .right {
+    /*width: 100%;*/
+	    
+	}
 	footer p {
 		height: auto;
 	}

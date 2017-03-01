@@ -27,9 +27,9 @@
 
     var userLanguage = navigator.language || navigator.userLanguageuage;
     if (userLanguage === 'da-DK' || userLanguage === 'da' || userLanguage === 'no' || userLanguage === 'sv' || userLanguage === 'sv-FI' ) {
-        var pageLanguage = 'da';
+      var pageLanguage = 'da';
     } else {
-        var pageLanguage = 'en';
+      var pageLanguage = 'en';
     }
 
     var buttonText = "BUY NOW";
@@ -37,111 +37,123 @@
 
     var options = {
       "product": {
-      "variantId": "all",
-      "width": "240px",
-      "contents": {
-        "img": false,
-        "title": false,
-        "variantTitle": false,
-        "price": false,
-        "description": false,
-        "buttonWithQuantity": false,
-        "quantity": false
-      },
-      "text": {
-        "button": "BUY NOW"
-      },
-      "styles": {
-        "product": {
-          "@media (min-width: 601px)": {
-            "max-width": "calc(25% - 20px)",
-            "margin-left": "20px",
-            "margin-bottom": "50px"
-          }
+        "variantId": "all",
+        "width": "100%",
+        "@media (min-width: 992px) and (max-width: 1199px)": {
+          // "width": "130px !important",
         },
-        "button": {
-          "background-color": "#3e89cc",
-          "padding-left": "12px",
-          "padding-right": "12px",
-          "width": "100%",
-          ":hover": {
-            "background-color": "#387bb8"
-          },
-          ":focus": {
-            "background-color": "#387bb8"
-          }
-        }
-      }
-    },
-    "cart": {
-      "contents": {
-        "button": true
-      },
-      "styles": {
-        "button": {
-          "background-color": "#3e89cc",
-          ":hover": {
-            "background-color": "#387bb8"
-          },
-          ":focus": {
-            "background-color": "#387bb8"
-          }
+        "@media (max-width: 991px)": {
+          // "width": "100% !important",
         },
-        "footer": {
-          "background-color": "#ffffff"
-        }
-      }
-    },
-    "modalProduct": {
-      "contents": {
-        "variantTitle": false,
-        "buttonWithQuantity": false,
-        "quantity": false
-      },
-      "styles": {
-        "product": {
-          "@media (min-width: 601px)": {
-            "max-width": "100%",
-            "margin-left": "0px",
-            "margin-bottom": "0px"
-          }
+        "contents": {
+          "img": false,
+          "title": false,
+          "variantTitle": false,
+          "price": false,
+          "description": false,
+          "buttonWithQuantity": false,
+          "quantity": false
         },
-        "button": {
-          "background-color": "#3e89cc",
-          "padding-left": "80px",
-          "padding-right": "80px",
-          ":hover": {
-            "background-color": "#387bb8"
+        "text": {
+          "button": "BUY NOW"
+        },
+        "styles": {
+          "product": {
+            "@media (min-width: 601px)": {
+              "max-width": "calc(25% - 20px)",
+              "margin-left": "20px",
+              "margin-bottom": "50px"
+            },
           },
-          ":focus": {
-            "background-color": "#387bb8"
+          "button": {
+            "background-color": "#3e89cc",
+            "padding-left": "12px",
+            "padding-right": "12px",
+            "width": "100%",
+            "@media (min-width: 992px) and (max-width: 1199px)": {
+              "width": "130px",
+            },
+            "@media (max-width: 991px)": {
+              "width": "100%",
+            },
+            ":hover": {
+              "background-color": "#387bb8"
+            },
+            ":focus": {
+              "background-color": "#387bb8"
+            },
           }
         }
-      }
-    },
-    "toggle": {
-      "styles": {
-        "toggle": {
-          "background-color": "#3e89cc",
-          ":hover": {
-            "background-color": "#387bb8"
+      },
+      "cart": {
+        "contents": {
+          "button": true
+        },
+        "styles": {
+          "button": {
+            "background-color": "#3e89cc",
+            ":hover": {
+              "background-color": "#387bb8"
+            },
+            ":focus": {
+              "background-color": "#387bb8"
+            }
           },
-          ":focus": {
-            "background-color": "#387bb8"
+          "footer": {
+            "background-color": "#ffffff"
           }
         }
-      }
-    },
-    "productSet": {
-      "styles": {
-        "products": {
-          "@media (min-width: 601px)": {
-            "margin-left": "-20px"
+      },
+      "modalProduct": {
+        "contents": {
+          "variantTitle": false,
+          "buttonWithQuantity": false,
+          "quantity": false
+        },
+        "styles": {
+          "product": {
+            "@media (min-width: 601px)": {
+              "max-width": "100%",
+              "margin-left": "0px",
+              "margin-bottom": "0px"
+            }
+          },
+          "button": {
+            "background-color": "#3e89cc",
+            "padding-left": "80px",
+            "padding-right": "80px",
+            ":hover": {
+              "background-color": "#387bb8"
+            },
+            ":focus": {
+              "background-color": "#387bb8"
+            }
+          }
+        }
+      },
+      "toggle": {
+        "styles": {
+          "toggle": {
+            "background-color": "#3e89cc",
+            ":hover": {
+              "background-color": "#387bb8"
+            },
+            ":focus": {
+              "background-color": "#387bb8"
+            }
+          }
+        }
+      },
+      "productSet": {
+        "styles": {
+          "products": {
+            "@media (min-width: 601px)": {
+              "margin-left": "-20px"
+            }
           }
         }
       }
     }
-  }
 
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
@@ -179,13 +191,17 @@
       });
     }); 
 
+  // Make a unique copy, not a linked reference:
+  var powerMoringaOptions = JSON.parse(JSON.stringify(options));
+  powerMoringaOptions['product']['styles']['button']['background-color'] = '#c8c9d2';
+
     //4 pcs Moringa Shake
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: [7762674055],
         node: document.getElementById('product-component-613b1dc7cc5'),
         moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
-        options: options
+        options: powerMoringaOptions
       });
     }); 
 
@@ -195,7 +211,7 @@
         id: [5429689543],
         node: document.getElementById('product-component-6e9b8307985'),
         moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
-        options: options
+        options: powerMoringaOptions
       });
     }); 
     
