@@ -65,6 +65,9 @@
               "margin-bottom": "50px"
             },
           },
+          "buttonWrapper": {
+            "margin-top": "8px",
+          },
           "button": {
             "background-color": "#3e89cc",
             "padding-left": "12px",
@@ -194,6 +197,7 @@
   // Make a unique copy, not a linked reference:
   var powerMoringaOptions = JSON.parse(JSON.stringify(options));
   powerMoringaOptions['product']['styles']['button']['background-color'] = '#c8c9d2';
+  powerMoringaOptions['product']['styles']['buttonWrapper']['margin-top'] = '26px';
 
     //4 pcs Moringa Shake
     ShopifyBuy.UI.onReady(client).then(function (ui) {
