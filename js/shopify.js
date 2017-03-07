@@ -176,28 +176,40 @@
       });
     });
 
+    //PB Vanilla
+    // ShopifyBuy.UI.onReady(client).then(function (ui) {
+    //   ui.createComponent('product', {
+    //     id: [9542061511],
+    //     node: document.getElementById('product-component-ef1da729b1e'),
+    //     moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+    //     options: options
+    //   });
+    // });    
+    
+    //PB Strawberry
+    // ShopifyBuy.UI.onReady(client).then(function (ui) {
+    //   ui.createComponent('product', {
+    //     id: [9542082567],
+    //     node: document.getElementById('product-component-a15233353a7'),
+    //     moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+    //     options: options
+    //   });
+    // }); 
+
+    //PB 3 variant
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
-        id: [9542061511],
-        node: document.getElementById('product-component-ef1da729b1e'),
+        id: [10031751623],
+        node: document.getElementById('product-component-2a9a660baca'),
         moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
         options: options
       });
     });    
-    
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: [9542082567],
-        node: document.getElementById('product-component-a15233353a7'),
-        moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
-        options: options
-      });
-    }); 
 
-  // Make a unique copy, not a linked reference:
-  var powerMoringaOptions = JSON.parse(JSON.stringify(options));
-  powerMoringaOptions['product']['styles']['button']['background-color'] = '#c8c9d2';
-  powerMoringaOptions['product']['styles']['buttonWrapper']['margin-top'] = '26px';
+    // Make a unique copy, not a linked reference:
+    var powerMoringaOptions = JSON.parse(JSON.stringify(options));
+    powerMoringaOptions['product']['styles']['button']['background-color'] = '#c8c9d2';
+    powerMoringaOptions['product']['styles']['buttonWrapper']['margin-top'] = '26px';
 
     //4 pcs Moringa Shake
     ShopifyBuy.UI.onReady(client).then(function (ui) {
