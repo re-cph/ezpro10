@@ -495,7 +495,8 @@ header .intro-section .buttons {
 }
 
 .buybox-left .free-shipping,
-.buybox-right .free-shipping {
+.buybox-right .free-shipping,
+.buybox-center .free-shipping {
     clear: both;
     font-size: 12px;
     font-style: italic;
@@ -535,6 +536,18 @@ header .intro-section .buttons {
     text-decoration: underline;
 }
 
+.product-wrapper.buybox-center {
+    display: inline-block;
+}
+
+.product-wrapper .buybox-label {
+    margin-top: 40px;
+}
+
+.product-wrapper .buybox-label span {
+    text-align: left;
+    float: left;
+}
 /*---------------------------------------
    SECTION:  BUYBOX / FEATURES
 -----------------------------------------*/
@@ -558,7 +571,8 @@ header .intro-section .buttons {
 }
 
 .features .features-right,
-.buybox .buybox-right {
+.buybox .buybox-right,
+.buybox .buybox-center {
     text-align: left;
     margin-top: 26px;
     margin-bottom: 80px;
