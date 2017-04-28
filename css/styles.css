@@ -474,11 +474,11 @@ header .intro-section .buttons {
     margin-left: 105px;
 }
 
-.buybox-left .buybox-container.fifty {
+.buybox-left .fifty .buybox-container {
     margin-right: 155px;
 }
 
-.buybox-right .buybox-container.fifty {
+.buybox-right .fifty .buybox-container {
     margin-left: 155px;
 }
 
@@ -500,6 +500,9 @@ header .intro-section .buttons {
 
 .buybox-right img.flask {
     left: 0;
+}
+.buybox-right .fifty img.flask {
+    margin-left: 50px;
 }
 
 .buybox-left .free-shipping,
