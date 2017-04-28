@@ -164,6 +164,8 @@ h1 {
 h2 {
     font-size: 3.125rem;
     line-height: 4.063rem;
+    font-size: 40px;
+    line-height: 50px;
 }
 
 h3 {
@@ -474,12 +476,8 @@ header .intro-section .buttons {
     margin-left: 105px;
 }
 
-.buybox-left .fifty .buybox-container {
-    margin-right: 155px;
-}
-
-.buybox-right .fifty .buybox-container {
-    margin-left: 155px;
+.powerblend .buybox-container {
+    margin: 0;
 }
 
 .buybox-text,
@@ -494,6 +492,7 @@ header .intro-section .buttons {
     bottom: 0;
 }
 
+
 .buybox-left img.flask {
     right: 0;
 }
@@ -501,8 +500,22 @@ header .intro-section .buttons {
 .buybox-right img.flask {
     left: 0;
 }
-.buybox-right .fifty img.flask {
-    margin-left: 50px;
+.powerblend .powerblend-image {
+    position: relative;
+    height: 200px;
+}
+.powerblend img.flask {
+    position: absolute;
+    bottom: 0;
+}
+.buybox-left.powerblend img.flask {
+    float: right;
+    right: 0;
+}
+
+.buybox-right.powerblend img.flask {
+    float: left;
+    left: 0;
 }
 
 .buybox-left .free-shipping,

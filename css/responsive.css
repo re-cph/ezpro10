@@ -32,6 +32,11 @@ RESPONSIVE FIXES
     width: 100%;
 	}
 
+	.powerblend .buynow-group .left,
+	.powerblend .buynow-group .right {
+    max-width: 269px;
+	}
+
 	.buybox-right .buynow-group .fr {
     float: left;
 	}
@@ -298,6 +303,11 @@ RESPONSIVE FIXES
 		margin-top: 60px;
 	}
 
+	.powerblend .buybox-container {
+		margin: 0;
+		margin-top: 60px;
+	}
+
 	.features .features-left,
 	.features .features-right {
 		text-align: center;
@@ -363,7 +373,11 @@ RESPONSIVE FIXES
 	}
 
 	.buybox-right .buybox-container {
-		width: 185px;
+		/*width: 185px;*/
+	}
+
+	.powerblend .buybox-container {
+		margin: 0;
 	}
 
 	.testimonials, 
