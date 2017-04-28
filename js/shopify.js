@@ -169,6 +169,15 @@
 
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
+        id: [10348262867],
+        node: document.getElementById('product-component-91fcf53eab0'),
+        moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+        options: options
+      });
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
         id: [9718377607],
         node: document.getElementById('product-component-32e80b34e9c'),
         moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
