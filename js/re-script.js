@@ -4,9 +4,9 @@ $(document).ready(function() {
   //| or right, so they are  |\\
   //|     the same size.     |\\
   //////////////|\\\\\\\\\\\\\\\
-  var buyBoxSize = function () {
-    var boxLeft = $('.buybox-left');
-    var boxRight = $('.buybox-right');
+  var buyBoxSize = function (parent) {
+    var boxLeft = $(parent).find('.buybox-left');
+    var boxRight = $(parent).find('.buybox-right');
     var boxLeftText = boxLeft.find('.buybox-text');
     var boxRightText = boxRight.find('.buybox-text');
 
@@ -33,8 +33,13 @@ $(document).ready(function() {
     }
   }
 
-  buyBoxSize();
-  $(window).bind('resize', buyBoxSize);
+  function bindFunction() {
+    buyBoxSize('#buynow');
+    buyBoxSize('#buynow-powerblend');
+  }
+  
+  bindFunction();
+  $(window).bind('resize', bindFunction());
 
   // Animated scroll to anchors
   var scrollAnimationTime = 1200;
