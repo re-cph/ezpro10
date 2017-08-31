@@ -78,7 +78,7 @@ footer .contact-button {
 }
 
 footer .contact-button:hover {
-    background: #008ed6;
+    background: #9eb9e3;
 }
 
 footer .contact-box .expanded-contact-form .input-box:active,
@@ -89,5 +89,5 @@ footer .contact-box .expanded-contact-form .textarea-box:focus {
 }
 
 footer .social-icons li a:hover {
-    color: #008ed6;
+    color: #005885;
 }
