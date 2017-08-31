@@ -204,6 +204,16 @@
     //     options: options
     //   });
     // }); 
+      
+      //OMEGA 3
+     ShopifyBuy.UI.onReady(client).then(function (ui) {
+       ui.createComponent('product', {
+         id: [12273117651],
+         node: document.getElementById('product-component-a15233353a7'),
+         moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+         options: options
+       });
+     }); 
 
     //PB 3 variant
     ShopifyBuy.UI.onReady(client).then(function (ui) {
