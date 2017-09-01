@@ -647,7 +647,7 @@ header .intro-section .buttons {
 }
 
 .features .phone-image {
-    max-width: 220px;
+    max-width: 350px;
     margin: auto;
     margin-bottom: 40px;
 }
@@ -678,7 +678,7 @@ header .intro-section .buttons {
 }
 
 .app-brief .phone-image {
-    max-width: 350px;
+    max-width: 142px;
     margin: auto;
     margin-bottom: 50px;
 }
