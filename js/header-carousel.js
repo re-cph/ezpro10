@@ -1,5 +1,8 @@
 // JavaScript Document
 var carouselImages = ["images/big/camilla.jpg",
+                      "images/big/bag.jpg",
+                      "images/big/daniel.jpg",
+                      "images/big/kokos.jpg",
                       "images/big/EZYPRO_0075v3.jpg",
                       "images/big/Ezy6482.jpg"
 					 ];
@@ -14,7 +17,7 @@ $(document).ready(function() {
 	var carousel = function(){
 			$('header')
 				.css('background-image','url("'+ carouselImages[caroIndex] + '")')
-				.fadeIn(1000, function(){setTimeout(carousel,15000);});
+				.fadeIn(1000, function(){setTimeout(carousel,12000);});
 		caroIndex++;
 		caroIndex = caroIndex % carouselImages.length;
 	};
