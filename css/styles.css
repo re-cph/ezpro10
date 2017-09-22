@@ -716,7 +716,7 @@ header .intro-section .buttons {
   text-align: left;
   color: black;
   font-size: 16px;
-  position: relative;
+  position: absolute;
   top: 2%;
   left: 20%;
   
