@@ -241,6 +241,11 @@ h5 {
     background: #F7F8FA !important;
 }
 
+.blue-bg {
+    background:#cde0fa;
+    /*#cde0fa*/
+    /*:#c2d7f3*/
+}
 
 /*---------------------------------------
    SECTIONS
@@ -686,7 +691,7 @@ header .intro-section .buttons {
   left: 0;
   right: 0;
   height: 80%;
-  width: 100%;
+  width: 110%;
   opacity: 0;
   transition: .5s ease;
   background-color: white;
@@ -701,7 +706,8 @@ header .intro-section .buttons {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #F7F8FA;
+  
+  background-color: #cde0fa;
 }
 
 .image-hover:hover .overlayhover {
