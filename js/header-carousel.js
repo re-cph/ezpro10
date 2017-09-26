@@ -1,10 +1,10 @@
 // JavaScript Document
-
+//hide h1 elements
 var h = document.getElementsByClassName("intro");
 for (var i = h.length; i--; ) {
     h[i].style.display = 'none';
 }
-
+//Carousel view for .img
 var carouselImages = ["images/big/camilla.jpg",
                       "images/big/bag.jpg",
                       "images/big/daniel.jpg",
@@ -23,6 +23,7 @@ $(document).ready(function() {
 			$('header')
 				.css('background-image','url("'+ carouselImages[caroIndex] + '")')
 				.fadeIn(1000, function(){setTimeout(carousel,12000);}); 
+        
         if(caroIndex==0){
                 h[4].style.display = 'none';
                 h[caroIndex].style.display = '';
