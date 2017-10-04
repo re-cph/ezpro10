@@ -1098,6 +1098,17 @@ object {
     margin-bottom: 30px;
 }
 
+/*---------------------------------------
+   SECTION:  INSTAGRAM
+-----------------------------------------*/
+
+.instagram {
+    
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: rgb(177, 201, 233);    
+
+}
 
 /*---------------------------------------
    SECTION:  FOOTER
